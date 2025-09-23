@@ -25,18 +25,21 @@ All colors MUST be HSL.
     --primary-foreground: 0 0% 100%;
     --primary-hover: 0 84% 38%;
     --primary-light: 0 84% 95%;
+    --primary-soft: 0 50% 88%;
 
-    /* Secondary grays for professional look */
-    --secondary: 215 20% 65%;
-    --secondary-foreground: 0 0% 100%;
+    /* Friendlier secondary colors - warm blue-gray */
+    --secondary: 210 25% 98%;
+    --secondary-foreground: 210 40% 25%;
+    --secondary-accent: 210 30% 85%;
 
-    /* Muted colors for subtle elements */
-    --muted: 215 16% 95%;
-    --muted-foreground: 215 13% 45%;
+    /* Warm muted colors for subtle elements */
+    --muted: 25 20% 96%;
+    --muted-foreground: 25 15% 45%;
 
-    /* Accent colors */
-    --accent: 215 16% 95%;
-    --accent-foreground: 216 12% 15%;
+    /* Friendly accent colors - soft orange */
+    --accent: 25 85% 95%;
+    --accent-foreground: 25 40% 25%;
+    --accent-warm: 35 80% 88%;
 
     /* Status colors */
     --destructive: 0 84.2% 60.2%;
@@ -55,12 +58,16 @@ All colors MUST be HSL.
 
     /* Custom design tokens for appliance repair business */
     --hero-gradient: linear-gradient(135deg, hsl(0 84% 45% / 0.9), hsl(0 84% 38% / 0.95));
-    --service-gradient: linear-gradient(145deg, hsl(215 16% 98%), hsl(215 16% 95%));
+    --service-gradient: linear-gradient(145deg, hsl(25 20% 98%), hsl(25 15% 95%));
+    --card-gradient: linear-gradient(145deg, hsl(210 25% 98%), hsl(210 20% 96%));
+    --warm-gradient: linear-gradient(135deg, hsl(25 85% 95%), hsl(35 80% 88%));
     --shadow-soft: 0 2px 8px hsl(0 0% 0% / 0.08);
     --shadow-medium: 0 8px 25px hsl(0 0% 0% / 0.12);
     --shadow-strong: 0 20px 40px hsl(0 0% 0% / 0.15);
+    --shadow-warm: 0 4px 15px hsl(35 80% 70% / 0.15);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    --transition-gentle: all 0.2s ease-out;
 
     /* Professional spacing */
     --section-padding: 5rem 0;
@@ -165,6 +172,14 @@ All colors MUST be HSL.
     background: var(--service-gradient);
   }
 
+  .card-gradient {
+    background: var(--card-gradient);
+  }
+
+  .warm-gradient {
+    background: var(--warm-gradient);
+  }
+
   .shadow-soft {
     box-shadow: var(--shadow-soft);
   }
@@ -177,12 +192,67 @@ All colors MUST be HSL.
     box-shadow: var(--shadow-strong);
   }
 
+  .shadow-warm {
+    box-shadow: var(--shadow-warm);
+  }
+
   .transition-smooth {
     transition: var(--transition-smooth);
   }
 
   .transition-bounce {
     transition: var(--transition-bounce);
+  }
+
+  .transition-gentle {
+    transition: var(--transition-gentle);
+  }
+
+  /* Enhanced animations */
+  .fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+  }
+
+  .slide-in-right {
+    animation: slideInRight 0.5s ease-out;
+  }
+
+  .bounce-gentle {
+    animation: bounceGentle 0.8s ease-out;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes bounceGentle {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-10px);
+    }
+    60% {
+      transform: translateY(-5px);
+    }
   }
 
   /* WhatsApp floating button */
