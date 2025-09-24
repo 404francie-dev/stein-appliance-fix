@@ -20,8 +20,8 @@ const WorkingHours = () => {
     const day = now.getDay();
     const hour = now.getHours();
     
-    // Monday (1) to Friday (5), 8 AM to 6 PM
-    return day >= 1 && day <= 5 && hour >= 8 && hour < 18;
+    // Monday (1) to Thursday (4), Saturday (6) and Sunday (0), 8 AM to 6 PM
+    return (day >= 1 && day <= 4 || day === 6 || day === 0) && hour >= 8 && hour < 18;
   };
 
   const schedule = [
@@ -29,9 +29,9 @@ const WorkingHours = () => {
     { day: "Tuesday", hours: "8:00 AM - 6:00 PM", isToday: getCurrentDay() === "Tuesday" },
     { day: "Wednesday", hours: "8:00 AM - 6:00 PM", isToday: getCurrentDay() === "Wednesday" },
     { day: "Thursday", hours: "8:00 AM - 6:00 PM", isToday: getCurrentDay() === "Thursday" },
-    { day: "Friday", hours: "8:00 AM - 6:00 PM", isToday: getCurrentDay() === "Friday" },
-    { day: "Saturday", hours: "Closed", isToday: getCurrentDay() === "Saturday" },
-    { day: "Sunday", hours: "Closed", isToday: getCurrentDay() === "Sunday" },
+    { day: "Friday", hours: "Closed", isToday: getCurrentDay() === "Friday" },
+    { day: "Saturday", hours: "8:00 AM - 6:00 PM", isToday: getCurrentDay() === "Saturday" },
+    { day: "Sunday", hours: "8:00 AM - 6:00 PM", isToday: getCurrentDay() === "Sunday" },
   ];
 
   return (

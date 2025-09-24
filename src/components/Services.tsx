@@ -1,23 +1,25 @@
-import { Refrigerator, Waves, ChefHat } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import fridgeRepairImage from "@/assets/fridge-repair.jpg";
+import washingMachineRepairImage from "@/assets/washing-machine-repair.jpg";
+import stoveOvenRepairImage from "@/assets/stove-oven-repair.jpg";
 
 const Services = () => {
   const services = [
     {
-      icon: Refrigerator,
+      image: fridgeRepairImage,
       title: "Fridge Repairs",
       description: "Expert repairs for all refrigerator brands including temperature issues, ice makers, and cooling problems.",
       features: ["Temperature control fixes", "Ice maker repairs", "Door seal replacements", "Compressor repairs"]
     },
     {
-      icon: Waves,
+      image: washingMachineRepairImage,
       title: "Washing Machine Repairs", 
       description: "Professional washing machine servicing for all major brands. We fix drainage, spin cycles, and motor issues.",
       features: ["Drainage problems", "Spin cycle repairs", "Motor replacements", "Control panel fixes"]
     },
     {
-      icon: ChefHat,
+      image: stoveOvenRepairImage,
       title: "Stove & Oven Repairs",
       description: "Complete stove and oven repair services including gas and electric units, thermostats, and heating elements.",
       features: ["Heating element replacement", "Thermostat repairs", "Gas line repairs", "Control panel fixes"]
@@ -44,13 +46,17 @@ const Services = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => {
-            const IconComponent = service.icon;
             return (
-              <Card key={index} className="service-card bg-white border-none shadow-soft hover:shadow-medium">
+              <Card key={index} className="service-card bg-white border-none shadow-soft hover:shadow-medium overflow-hidden">
+                <div className="relative h-48 overflow-hidden">
+                  <img 
+                    src={service.image} 
+                    alt={service.title}
+                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+                </div>
                 <CardHeader className="text-center">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <IconComponent className="w-8 h-8 text-primary" />
-                  </div>
                   <CardTitle className="text-xl font-bold">{service.title}</CardTitle>
                 </CardHeader>
                 

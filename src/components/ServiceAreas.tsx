@@ -4,16 +4,18 @@ import { Button } from "@/components/ui/button";
 const ServiceAreas = () => {
   const areas = [
     { name: "Benoni", distance: "0 km", priority: true },
-    { name: "Boksburg", distance: "12 km", priority: true },
-    { name: "Kempton Park", distance: "15 km", priority: true },
-    { name: "Edenvale", distance: "18 km", priority: true },
+    { name: "Midrand", distance: "15 km", priority: true },
+    { name: "Centurion", distance: "18 km", priority: true },
+    { name: "Pretoria", distance: "20 km", priority: true },
+    { name: "Fourways", distance: "22 km", priority: true },
+    { name: "Boksburg", distance: "12 km", priority: false },
+    { name: "Kempton Park", distance: "15 km", priority: false },
+    { name: "Edenvale", distance: "18 km", priority: false },
     { name: "Germiston", distance: "20 km", priority: false },
     { name: "Springs", distance: "22 km", priority: false },
     { name: "Alberton", distance: "25 km", priority: false },
     { name: "Johannesburg", distance: "30 km", priority: false },
-    { name: "Midrand", distance: "35 km", priority: false },
     { name: "Sandton", distance: "40 km", priority: false },
-    { name: "Pretoria", distance: "45 km", priority: false },
     { name: "Randburg", distance: "50 km", priority: false },
   ];
 
