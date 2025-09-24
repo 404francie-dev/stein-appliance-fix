@@ -12,6 +12,7 @@ import heroTechnicianImage from "@/assets/hero-technician.jpg";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
+import { Link } from "react-router-dom"; 
 
 const Services = () => {
   const AnimatedSection = ({ children, index }: { children: React.ReactNode; index: number }) => {
