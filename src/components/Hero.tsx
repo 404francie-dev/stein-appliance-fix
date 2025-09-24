@@ -8,7 +8,7 @@ const Hero = () => {
   };
 
   const handleWhatsApp = () => {
-    window.open("https://wa.me/27780689585", "_blank");
+    window.open("https://wa.me/27837255171", "_blank");
   };
 
   return (
@@ -26,7 +26,7 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 text-center text-white">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Fast & Reliable Appliance Repairs in Benoni
+            Fast & Reliable Appliance Repairs
           </h1>
           
           <p className="text-xl md:text-2xl mb-8 text-white/90">
@@ -47,7 +47,7 @@ const Hero = () => {
               onClick={handleWhatsApp}
               variant="outline"
               size="lg"
-              className="border-2 border-white text-white hover:bg-white hover:text-primary font-semibold px-8 py-6 text-lg flex items-center space-x-2"
+              className="border-2 border-white text-primary hover:bg-white hover:text-primary font-semibold px-8 py-6 text-lg flex items-center space-x-2"
             >
               <MessageCircle className="w-5 h-5" />
               <span>WhatsApp Us</span>
@@ -57,7 +57,7 @@ const Hero = () => {
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center text-white/90">
             <div className="flex items-center space-x-2">
               <Phone className="w-4 h-4" />
-              <span>078 068 9585</span>
+              <span>083 725 5171</span>
             </div>
             <div className="hidden sm:block">•</div>
             <div className="flex items-center space-x-2">

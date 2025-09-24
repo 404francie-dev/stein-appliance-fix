@@ -7,7 +7,7 @@ const Header = () => {
   };
 
   const handleWhatsApp = () => {
-    window.open("https://wa.me/27780689585", "_blank");
+    window.open("https://wa.me/27837255171", "_blank");
   };
 
   return (
@@ -24,7 +24,7 @@ const Header = () => {
               <p className="text-sm text-muted-foreground">Professional Repair Services</p>
               <div className="flex items-center space-x-1 mt-1">
                 <Phone className="w-3 h-3 text-primary" />
-                <span className="text-xs font-semibold text-primary">078 068 9585</span>
+                <span className="text-xs font-semibold text-primary">083 725 5171</span>
               </div>
             </div>
           </div>
@@ -54,7 +54,7 @@ const Header = () => {
               className="hidden sm:flex items-center space-x-2 border-primary text-primary hover:bg-primary hover:text-white shadow-soft hover:shadow-medium transition-smooth bounce-gentle"
             >
               <Phone className="w-4 h-4" />
-              <span className="font-semibold">078 068 9585</span>
+              <span className="font-semibold">083 725 5171</span>
             </Button>
             
             <Button 

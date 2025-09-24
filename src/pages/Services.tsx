@@ -40,12 +40,10 @@ const Services = () => {
       services: [
         "Temperature control and thermostat repairs",
         "Ice maker repairs and replacements",
-        "Door seal and gasket replacements",
         "Compressor repairs and diagnostics",
         "Defrost system repairs",
-        "Water dispenser and filter issues",
         "Interior lighting repairs",
-        "Shelf and drawer replacements"
+        "Gas And Leak Detection"
       ],
       brands: ["Samsung", "LG", "Defy", "Bosch", "Whirlpool", "Hisense", "AEG", "Kelvinator"]
     },
@@ -92,12 +90,12 @@ const Services = () => {
   };
 
   const handleWhatsApp = () => {
-    window.open("https://wa.me/27780689585", "_blank");
+    window.open("https://wa.me/27837255171", "_blank");
   };
 
   const handleContact = (serviceTitle: string) => {
     const message = `Hi, I need help with ${serviceTitle.toLowerCase()}. Can you assist me?`;
-    window.open(`https://wa.me/27780689585?text=${encodeURIComponent(message)}`, "_blank");
+    window.open(`https://wa.me/27837255171?text=${encodeURIComponent(message)}`, "_blank");
   };
 
   return (
@@ -117,7 +115,7 @@ const Services = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button onClick={handleCall} size="lg" className="bg-primary hover:bg-primary-hover text-white">
               <Phone className="w-5 h-5 mr-2" />
-              Call 078 068 9585
+              Call 083 725 5171
             </Button>
             <Button onClick={handleWhatsApp} variant="outline" size="lg" className="border-primary text-primary hover:bg-primary hover:text-white">
               <MessageCircle className="w-5 h-5 mr-2" />
@@ -297,7 +295,7 @@ const Services = () => {
               className="bg-white text-primary hover:bg-gray-100 hover-scale"
             >
               <Phone className="w-5 h-5 mr-2" />
-              078 068 9585
+              083 725 5171
             </Button>
             <Button 
               onClick={handleWhatsApp}

@@ -9,8 +9,8 @@ const Services = () => {
     {
       image: fridgeRepairImage,
       title: "Fridge Repairs",
-      description: "Expert repairs for all refrigerator brands including temperature issues, ice makers, and cooling problems.",
-      features: ["Temperature control fixes", "Ice maker repairs", "Door seal replacements", "Compressor repairs"]
+      description: "Expert repairs for all refrigerator brands including temperature issues and cooling problems.",
+      features: ["Temperature control fixes", "PC Board Repair", "Compressor repairs","Gas recharging & leak detection"]
     },
     {
       image: washingMachineRepairImage,

@@ -7,7 +7,7 @@ const WorkingHours = () => {
   };
 
   const handleWhatsApp = () => {
-    window.open("https://wa.me/27780689585", "_blank");
+    window.open("https://wa.me/27837255171", "_blank");
   };
 
   const getCurrentDay = () => {
@@ -142,7 +142,7 @@ const WorkingHours = () => {
                   className="bg-primary hover:bg-primary-hover text-white w-full"
                 >
                   <Phone className="w-4 h-4 mr-2" />
-                  Call Now: 078 068 9585
+                  Call Now: 083 725 5171
                 </Button>
                 <Button 
                   onClick={handleWhatsApp}

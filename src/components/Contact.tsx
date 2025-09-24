@@ -19,7 +19,7 @@ const Contact = () => {
     
     // Create WhatsApp message
     const whatsappMessage = `Hi! I'm ${formData.name}. Phone: ${formData.phone}. Message: ${formData.message}`;
-    const whatsappUrl = `https://wa.me/27780689585?text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappUrl = `https://wa.me/27837255171?text=${encodeURIComponent(whatsappMessage)}`;
     
     window.open(whatsappUrl, '_blank');
     
@@ -43,7 +43,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Call Us",
-      details: ["078 068 9585", "082 624 1823"],
+      details: ["083 725 5171", "082 624 1823"],
       action: () => window.location.href = "tel:0780689585"
     },
     {
@@ -55,7 +55,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Service Area",
-      details: ["Benoni & Surrounding Areas", "Fast Response Times"],
+      details: ["Pretoria & Surrounding Areas", "Fast Response Times"],
       action: null
     }
   ];
@@ -105,7 +105,7 @@ const Contact = () => {
             {/* WhatsApp Direct Button */}
             <div className="mt-8">
               <Button 
-                onClick={() => window.open("https://wa.me/27780689585", "_blank")}
+                onClick={() => window.open("https://wa.me/27837255171", "_blank")}
                 className="w-full bg-primary hover:bg-primary-hover text-white flex items-center justify-center space-x-2 py-6"
                 size="lg"
               >
