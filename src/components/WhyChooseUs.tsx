@@ -1,4 +1,5 @@
 import { Clock, Users, DollarSign, Shield } from "lucide-react";
+import satisfiedCustomerImage from "@/assets/satisfied-customer.jpg";
 
 const WhyChooseUs = () => {
   const features = [
@@ -25,15 +26,24 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section id="about" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
             Why Choose Stein Appliance Repairs?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            We're committed to providing exceptional service that you can trust for all your appliance repair needs.
+            We're committed to providing the best appliance repair service in Gauteng with unmatched quality and reliability.
           </p>
+        </div>
+
+        {/* Customer Satisfaction Image */}
+        <div className="mb-16">
+          <img 
+            src={satisfiedCustomerImage} 
+            alt="Satisfied customer with our repair technician"
+            className="w-full max-w-2xl mx-auto h-[300px] object-cover rounded-lg shadow-medium"
+          />
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
