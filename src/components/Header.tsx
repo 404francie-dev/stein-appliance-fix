@@ -1,5 +1,7 @@
 import { Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom"; 
+
 
 const Header = () => {
   const handleCall = () => {
@@ -31,12 +33,12 @@ const Header = () => {
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="/" className="text-foreground hover:text-primary transition-smooth">
+            <Link to="/" className="text-foreground hover:text-primary transition-smooth">
               Home
-            </a>
-            <a href="/servicesPage" className="text-foreground hover:text-primary transition-smooth">
+            </Link>
+            <Link to="/servicesPage" className="text-foreground hover:text-primary transition-smooth">
               Services
-            </a>
+            </Link>
             <a href="#about" className="text-foreground hover:text-primary transition-smooth">
               About
             </a>
