@@ -3,6 +3,8 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import fridgeRepairImage from "@/assets/fridge-repair.jpg";
 import washingMachineRepairImage from "@/assets/washing-machine-repair.jpg";
 import stoveOvenRepairImage from "@/assets/stove-oven-repair.jpg";
+import { Link } from "react-router-dom"; 
+
 
 const Services = () => {
   const services = [
@@ -76,12 +78,15 @@ const Services = () => {
                 </CardContent>
                 
                 <CardFooter>
+                  <Link to="/servicesPage" className="w-full">
                   <Button 
                     onClick={() => handleLearnMore(service.title)}
                     className="w-full bg-primary hover:bg-primary-hover text-white"
                   >
                     Learn More
+                    
                   </Button>
+                  </Link>
                 </CardFooter>
               </Card>
             );

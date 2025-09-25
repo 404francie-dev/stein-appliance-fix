@@ -8,7 +8,7 @@ import fridgeRepairImage from "@/assets/fridge-repair.jpg";
 import washingMachineRepairImage from "@/assets/washing-machine-repair.jpg";
 import stoveOvenRepairImage from "@/assets/stove-oven-repair.jpg";
 import satisfiedCustomerImage from "@/assets/satisfied-customer.jpg";
-import heroTechnicianImage from "@/assets/hero-technician.jpg";
+import heroTechnicianImage from "@/assets/TheTechnician-repair.jpg";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
