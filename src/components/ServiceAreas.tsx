@@ -20,7 +20,7 @@ const ServiceAreas = () => {
   ];
 
   const handleCall = () => {
-    window.location.href = "tel:0780689585";
+    window.location.href = "tel:0837255171";
   };
 
   return (

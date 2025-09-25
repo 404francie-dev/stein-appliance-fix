@@ -44,7 +44,7 @@ const Contact = () => {
       icon: Phone,
       title: "Call Us",
       details: ["083 725 5171", "082 624 1823"],
-      action: () => window.location.href = "tel:0780689585"
+      action: () => window.location.href = "tel:0837255171"
     },
     {
       icon: Mail,
