@@ -3,20 +3,26 @@ import { Button } from "@/components/ui/button";
 
 const ServiceAreas = () => {
   const areas = [
-    { name: "Benoni", distance: "0 km", priority: true },
+   
     { name: "Midrand", distance: "15 km", priority: true },
     { name: "Centurion", distance: "18 km", priority: true },
     { name: "Pretoria", distance: "20 km", priority: true },
     { name: "Fourways", distance: "22 km", priority: true },
-    { name: "Boksburg", distance: "12 km", priority: false },
+    { name: "Sandton", distance: "40 km", priority: true },
+    { name: "Boksburg", distance: "12 km", priority: true },
+    {name: "Hartbeespoort" , distance: "70 km" , priority: true},
+    { name: "Randburg", distance: "50 km", priority: true },
+    { name: "Vaal", distance: "50 km", priority: true },
+    { name: "Midvaal", distance: "62 km", priority: true},
+    { name: "Bronkhorstspruit", distance: "50 km", priority: false},
     { name: "Kempton Park", distance: "15 km", priority: false },
     { name: "Edenvale", distance: "18 km", priority: false },
     { name: "Germiston", distance: "20 km", priority: false },
     { name: "Springs", distance: "22 km", priority: false },
     { name: "Alberton", distance: "25 km", priority: false },
     { name: "Johannesburg", distance: "30 km", priority: false },
-    { name: "Sandton", distance: "40 km", priority: false },
-    { name: "Randburg", distance: "50 km", priority: false },
+    { name: "Benoni", distance: "0 km", priority: false},
+    { name: "Roodepoot", distance: "50 km", priority: false},
   ];
 
   const handleCall = () => {
