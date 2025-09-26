@@ -78,7 +78,7 @@ const Services = () => {
                 </CardContent>
                 
                 <CardFooter>
-                  <Link to="/servicesPage" className="w-full">
+                  <Link to="/services" className="w-full">
                   <Button 
                     onClick={() => handleLearnMore(service.title)}
                     className="w-full bg-primary hover:bg-primary-hover text-white"
